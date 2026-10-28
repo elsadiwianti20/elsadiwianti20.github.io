@@ -3,97 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Saya</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #f4f4f4;
-        }
-
-        header {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-
-        nav {
-            background-color: #555;
-            padding: 10px;
-            text-align: center;
-        }
-
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-        }
-
-        nav a:hover {
-            color: yellow;
-        }
-
-        .container {
-            padding: 20px;
-        }
-
-        .card {
-            background: white;
-            padding: 15px;
-            margin: 15px 0;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-        }
-
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px;
-        }
-    </style>
+    <title>Portofolio Elsa Diwianti ✨</title>
+    
+    <!-- Link CSS Bootstrap 5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!-- Link CSS Kustom Kamu -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <h1>ElsaDiwianti</h1>
-    <p>Halo, saya seorang pelajar yang belajar coding</p>
-</header>
-
-<nav>
-    <a href="#about">Tentang</a>
-    <a href="#project">Projek</a>
-    <a href="#contact">Kontak</a>
-</nav>
-
-<div class="container">
-
-    <section id="about" class="card">
-        <h2>Tentang Saya</h2>
-        <p>Saya sedang belajar HTML, CSS, dan Java. Saya suka membuat aplikasi sederhana.</p>
-    </section>
-
-    <section id="project" class="card">
-        <h2>Projek</h2>
-        <ul>
-            <li>Aplikasi Pengolahan Gambar (Java)</li>
-            <li>Program OOP Kendaraan</li>
-            <li>Website sederhana HTML & CSS</li>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">Portofolio Elsa ✨</div>
+        <ul class="nav-links">
+            <li><a href="#tentang">Kenalan</a></li>
+            <li><a href="#proyek">Karya & Proyek</a></li>
+            <li><a href="#kontak">Kontak</a></li>
         </ul>
+        <div class="burger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-shape-1"></div>
+        <div class="hero-shape-2"></div>
+        <div class="hero-container">
+            <div class="hero-avatar-wrapper">
+                <img src="rt.jpeg" alt="Foto Elsa Diwianti" class="hero-avatar">
+            </div>
+            
+            <div class="hero-text">
+                <h1>Hai, Saya Elsa diwianti 👋</h1>
+                <p>Seorang web developer amatiran tapi punya semangat tinggi buat bikin website yang keren, rapi, dan enak dilihat.</p>
+                <a href="#tentang" class="btn-cta">Ngecek biodata Saya yuk!</a>
+            </div>
+        </div>
     </section>
 
-    <section id="contact" class="card">
-        <h2>Kontak</h2>
-        <p>Email: elsadiwiantiiiiiiiiiiiiiii@gmail.com</p>
-        <p>Instagram: @elsadiwianti</p>
+    <!-- TENTANG SAYA -->
+    <section id="tentang" class="section-container">
+        <h2 class="section-title">Kenalan dengan Elsa</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Hai! Saya Elsa, lagi belajar bikin website biar makin jago ngulik HTML dan CSS.</p>
+            </div>
+            <ul>
+                <li><strong>Hobi:</strong> Nonton dan membaca</li>
+                <li><strong>Makanan Favorit:</strong> Coto Makassar, ayam,manisan, kusuka semua makanan asal enak</li>
+                <li><strong>Olahraga yang saya suka:</strong> Volly dan badminton</li>
+            </ul>
+        </div>
     </section>
 
-</div>
+    <!-- KARYA & PROYEK -->
+    <section id="proyek" class="section-container">
+        <h2 class="section-title">Hasil Karya & Proyek Saya</h2>
+        
+        <div class="project-grid">
+            <!-- PROYEK 1 -->
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img src="coding.jpg" alt="Preview Portofolio" class="card-img-foto">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Website Portofolio Pribadi</h3>
+                    <p class="card-desc">Website untuk memperkenalkan diri dan menampilkan keterampilan serta hasil karya pribadi.</p>
+                    <button class="btn-card">Lihat Detail</button>
+                </div>
+            </div>
 
-<footer>
-    <p>© 2026 Portofolio Saya</p>
-</footer>
+            <!-- PROYEK 2 -->
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img src="kos.jpeg" alt="Preview Pencarian Kos" class="card-img-foto">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Aplikasi Pencarian Kos</h3>
+                    <p class="card-desc">Konsep aplikasi untuk membantu mahasiswa mencari kos dengan informasi harga, alamat, dan fasilitas.</p>
+                    <button class="btn-card">Lihat Detail</button>
+                </div>
+            </div>
 
+            <!-- PROYEK 3 -->
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img src="arduino.png" alt="Preview Sensor Suhu" class="card-img-foto">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Sistem Sensor Suhu</h3>
+                    <p class="card-desc">Proyek mikrokontroler menggunakan sensor DHT11 untuk membaca suhu dan kelembapan secara otomatis.</p>
+                    <button class="btn-card">Lihat Detail</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KONTAK -->
+    <section id="kontak" class="section-container">
+        <h2 class="section-title">Mau Ngobrol atau Kerja Bareng?</h2>
+        <div class="contact-form-wrapper">
+            <form>
+                <div class="form-group">
+                    <label>Nama Kamu</label>
+                    <input type="text" placeholder="Contoh: elsa diwianti" required>
+                </div>
+                <div class="form-group">
+                    <label>Email Kamu</label>
+                    <input type="email" placeholder="contoh@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label>Pesan / Obrolan</label>
+                    <textarea rows="4" placeholder="Tulis pesan atau sapaan di sini..." required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Kirim Pesan 🚀</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- MODAL POPUP DETAIL PROYEK -->
+    <div class="modal-overlay" id="modalProyek">
+        <div class="modal-box">
+            <button class="modal-close" id="btnClose">&times;</button>
+            <h3 class="modal-title" id="modalTitle">Judul Proyek</h3>
+            <p class="modal-body" id="modalDesc">Deskripsi lengkap proyek akan muncul di sini...</p>
+        </div>
+    </div>
+
+    <!-- Link JS Bootstrap 5.3 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <!-- Script JS Kustom Kamu -->
+    <script src="script.js"></script>
 </body>
 </html>
